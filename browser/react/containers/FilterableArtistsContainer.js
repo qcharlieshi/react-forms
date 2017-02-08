@@ -7,7 +7,8 @@ class FilterableArtistsContainer extends React.Component {
 
   constructor (props) {
     super(props);
-    this.state = {inputValue: ''}
+    this.state = {inputValue: ''};
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange (evt) {
@@ -31,3 +32,5 @@ class FilterableArtistsContainer extends React.Component {
   }
 
 }
+
+export default FilterableArtistsContainer;
